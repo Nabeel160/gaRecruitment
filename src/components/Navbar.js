@@ -6,71 +6,25 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-red-900 text-white shadow-lg sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between py-4">
-        {/* Logo */}
-        <Link to="/" className="text-2xl font-bold tracking-wide">
-          GA Recruitment
-        </Link>
-
-        {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-8">
-          <Link to="/" className="hover:text-gray-200 transition">Home</Link>
-          <Link to="/about" className="hover:text-gray-200 transition">About</Link>
-          <Link to="/services" className="hover:text-gray-200 transition">Services</Link>
-          <Link to="/contracts" className="hover:text-gray-200 transition">Contracts</Link>
-          <Link to="/contact" className="hover:text-gray-200 transition">Contact</Link>
-        </div>
-
-        {/* Mobile Menu Button */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden focus:outline-none"
-        >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+   <nav className="bg-[#b57571] shadow-md fixed w-full z-50">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between h-16 items-center">
+      {/* Logo */}
+      <div className="flex-shrink-0 text-white font-bold text-xl">
+        GA Recruitment
       </div>
 
-      {/* Mobile Dropdown Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-red-800 px-6 py-4 space-y-4">
-          <Link
-            to="/"
-            className="block hover:text-gray-200 transition"
-            onClick={() => setIsOpen(false)}
-          >
-            Home
-          </Link>
-          <Link
-            to="/about"
-            className="block hover:text-gray-200 transition"
-            onClick={() => setIsOpen(false)}
-          >
-            About
-          </Link>
-          <Link
-            to="/services"
-            className="block hover:text-gray-200 transition"
-            onClick={() => setIsOpen(false)}
-          >
-            Services
-          </Link>
-          <Link
-            to="/contracts"
-            className="block hover:text-gray-200 transition"
-            onClick={() => setIsOpen(false)}
-          >
-            Contracts
-          </Link>
-          <Link
-            to="/contact"
-            className="block hover:text-gray-200 transition"
-            onClick={() => setIsOpen(false)}
-          >
-            Contact
-          </Link>
-        </div>
-      )}
-    </nav>
+      {/* Links */}
+      <div className="hidden md:flex space-x-6">
+        <Link to="/" className="text-white hover:text-gray-200">Home</Link>
+        <Link to="/about" className="text-white hover:text-gray-200">About</Link>
+        <Link to="/services" className="text-white hover:text-gray-200">Services</Link>
+        <Link to="/contracts" className="text-white hover:text-gray-200">Contracts</Link>
+        <Link to="/contact" className="text-white hover:text-gray-200">Contact</Link>
+      </div>
+    </div>
+  </div>
+</nav>
+
   );
 };

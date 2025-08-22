@@ -1,9 +1,9 @@
 export const Services = () => {
   return (
-  <div className="bg-gray-50">
+  <div className="bg-gray-50 font-funnel">
       {/* Header */}
-      <section className="bg-red-900 text-white text-center py-16">
-        <h1 className="text-4xl font-extrabold">Our Services</h1>
+      <section className="text-center py-16 mt-10">
+        <h1 className="text-4xl font-extrabold font-playpen">Our Services</h1>
         <p className="mt-4 max-w-3xl mx-auto text-lg">
           GA Recruitment provides a wide range of professional staffing services
           designed to meet the needs of businesses, hotels, events, and cleaning
@@ -20,7 +20,7 @@ export const Services = () => {
           className="rounded-2xl shadow-lg"
         />
         <div>
-          <h2 className="text-3xl font-bold text-red-900 mb-4">Event Staffing</h2>
+          <h2 className="text-3xl font-bold mb-4">Event Staffing</h2>
           <p className="mb-4 text-gray-700 leading-relaxed">
             Hosting an event requires not only planning but also reliable staff
             who can manage guests, assist with operations, and ensure everything
@@ -44,7 +44,7 @@ export const Services = () => {
       {/* Hotel Staff */}
       <section className="py-16 bg-gray-100 max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
         <div>
-          <h2 className="text-3xl font-bold text-red-900 mb-4">Hotel Staffing</h2>
+          <h2 className="text-3xl font-bold mb-4">Hotel Staffing</h2>
           <p className="mb-4 text-gray-700 leading-relaxed">
             Hotels require a diverse range of skilled professionals to function
             effectively. GA Recruitment provides chefs, housekeeping staff,
@@ -76,7 +76,7 @@ export const Services = () => {
           className="rounded-2xl shadow-lg"
         />
         <div>
-          <h2 className="text-3xl font-bold text-red-900 mb-4">Cleaning Services</h2>
+          <h2 className="text-3xl font-bold mb-4">Cleaning Services</h2>
           <p className="mb-4 text-gray-700 leading-relaxed">
             A clean environment is essential for productivity and comfort. GA
             Recruitment offers professional cleaning staff for offices,
