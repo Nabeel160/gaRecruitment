@@ -43,7 +43,7 @@ export const Testimonials = () => {
         >
           {testimonials.map((t, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white rounded-2xl shadow-lg p-6 h-full flex flex-col justify-between hover:shadow-2xl transition">
+              <div className="bg-white rounded-2xl shadow-lg p-6 h-full flex flex-col justify-between hover:shadow-2xl transition mb-8">
                 <p className="text-gray-700 italic mb-4">“{t.text}”</p>
                 <h4 className="text-[#b57571] font-semibold">{t.name}</h4>
               </div>
