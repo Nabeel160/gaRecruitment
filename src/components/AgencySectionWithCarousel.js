@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 
 export const AgencySectionWithCarousel = () => {
   const items = [
-    { title: "Event Staff", img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f" },
-    { title: "Hotel Staff", img: "/images/hotelStaff.jpg" },
-    { title: "Cleaning Services", img: "https://images.unsplash.com/photo-1581578731548-c64695cc6952" },
+    { title: "Event Staff", img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f", link: '/services/event' },
+    { title: "Hotel Staff", img: "/images/hotelStaff.jpg", link: '/services/hotel' },
+    { title: "Cleaning Services", img: "https://images.unsplash.com/photo-1581578731548-c64695cc6952", link: '/services/cleaning' },
   ];
 
   return (
@@ -51,7 +51,7 @@ export const AgencySectionWithCarousel = () => {
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
                 <h3 className="text-3xl font-bold my-28">{item.title}</h3>
                 <Link
-                  to="/services"
+                  to={item.link}
                   className="text-sm underline hover:text-gray-300 transition"
                 >
                   Find out more

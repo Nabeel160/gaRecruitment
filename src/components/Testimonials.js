@@ -26,7 +26,7 @@ export const Testimonials = () => {
   return (
     <section className="bg-gray-50 py-16 mt-16">
       <div className="max-w-6xl mx-auto text-center px-6">
-        <h2 className="text-3xl font-bold text-[#b57571] mb-10">
+        <h2 className="text-3xl font-bold text-[#b57571] mb-10 font-playpen">
           What Our Clients Say
         </h2>
 

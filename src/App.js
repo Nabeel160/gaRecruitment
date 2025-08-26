@@ -1,14 +1,18 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import {Navbar} from "./components/Navbar";
-import {Footer} from "./components/Footer";
+import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
 import { Spinner } from "./components/Spinner";
 
-import {Home} from "./pages/Home";
-import {Services} from "./pages/Services";
-import {About} from "./pages/About";
-import {Contracts} from "./pages/Contracts";
-import {Contact} from "./pages/Contact";
+import { Home } from "./pages/Home";
+import { Services } from "./pages/Services/Services";
+import { About } from "./pages/About";
+import { Contracts } from "./pages/Contracts";
+import { Contact } from "./pages/Contact";
+import { EventStaff } from "./pages/Services/EventStaff";
+import { HotelStaff } from "./pages/Services/HotelStaff";
+import { CleaningStaff } from "./pages/Services/CleaningStaff";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -36,9 +40,13 @@ function App() {
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/services/event" element={<EventStaff />} />
+            <Route path="/services/hotel" element={<HotelStaff />} />
+            <Route path="/services/cleaning" element={<CleaningStaff />} />
             <Route path="/about" element={<About />} />
             <Route path="/contracts" element={<Contracts />} />
             <Route path="/contact" element={<Contact />} />

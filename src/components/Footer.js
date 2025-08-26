@@ -20,8 +20,8 @@ export const Footer = () => {
         <div>
           <h3 className="font-semibold mb-4">Policies</h3>
           <ul className="space-y-2 mb-6">
-            <li><a href="#" className="hover:underline">Privacy Policy</a></li>
-            <li><a href="#" className="hover:underline">Terms of Service</a></li>
+            <li><a href="/contact-us" className="hover:underline">Privacy Policy</a></li>
+            <li><a href="/contact-us" className="hover:underline">Terms of Service</a></li>
           </ul>
           <h3 className="font-semibold mb-4">Contact Us</h3>
           <p className="text-sm">

@@ -6,7 +6,7 @@ export const Home = () => {
     <div className="bg-gray-50 font-funnel">
       {/* Hero Section */}
       <section className="relative bg-white">
-        <div className="max-w-[90%] mx-auto my-28"> 
+        <div className="max-w-[90%] mx-auto my-28">
           <div className="relative">
             <img
               src="/images/mainBanner.webp"
@@ -15,22 +15,26 @@ export const Home = () => {
             />
 
             {/* Text overlay */}
-            <div className="absolute top-1/2 left-12 transform -translate-y-1/2 bg-white/80 p-8 rounded-lg shadow-md max-w-xl">
-              <h1 className="text-5xl font-bold text-[#b57571] mb-4 font-playpen">
-                GA Recruitment
-              </h1>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Providing trusted and professional staffing solutions for
-                hotels, events, and cleaning services. Our trained staff
-                seamlessly integrate into your operations to deliver exceptional
-                results.
-              </p>
-              <a
-                href="/services"
-                className="bg-[#b57571] text-white px-6 py-3 rounded-lg shadow hover:bg-[#9a5e5a] transition"
-              >
-                Explore Services
-              </a>
+            <div className="absolute inset-0 flex items-center justify-center md:justify-start md:pl-16 lg:pl-12">
+              <div className="bg-white/70 p-6 sm:p-8 rounded-lg shadow-md w-[90%] sm:w-[80%] md:w-[50%] lg:max-w-xl">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#b57571] mb-4 font-playpen text-center md:text-left">
+                  GA Recruitment
+                </h1>
+                <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-6 leading-relaxed text-center md:text-left">
+                  Providing trusted and professional staffing solutions for
+                  hotels, events, and cleaning services. Our trained staff
+                  seamlessly integrate into your operations to deliver
+                  exceptional results.
+                </p>
+                <div className="text-center md:text-left">
+                  <a
+                    href="/services"
+                    className="bg-[#b57571] text-white px-5 py-2 sm:px-6 sm:py-3 rounded-lg shadow hover:bg-[#9a5e5a] transition"
+                  >
+                    Explore Services
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -65,7 +69,7 @@ export const Home = () => {
             <img
               src="/images/homeSideImage.webp"
               alt="Professional team at work"
-              className="rounded-2xl shadow-lg"
+              className="rounded-2xl shadow-lg mx-auto h-[600px]"
             />
           </div>
         </div>
