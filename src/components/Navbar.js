@@ -7,7 +7,7 @@ export const Navbar = () => {
   const [servicesOpen, setServicesOpen] = useState(false);
 
   return (
-    <nav className="bg-[#b57571] shadow-md fixed w-full z-50 overflow-visible">
+    <nav className="bg-[#b57571] shadow-md fixed w-full z-50 overflow-visible font-funnel">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center relative">
           {/* Logo */}
