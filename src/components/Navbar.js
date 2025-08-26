@@ -25,12 +25,17 @@ export const Navbar = () => {
             {/* Services Dropdown */}
             <div className="relative group">
               <Link
-                to="/services"
                 className="flex items-center text-white hover:text-gray-200"
               >
                 Services <ChevronDown className="ml-1 w-4 h-4" />
               </Link>
-              <div className="absolute top-full left-0 hidden group-hover:block bg-[#b57571] shadow-lg rounded-md w-52 z-50">
+              <div className="absolute top-full left-0 hidden group-hover:block bg-[#b57571] shadow-lg rounded-md w-52 z-50 font-playpen">
+                <Link
+                  to="/services"
+                  className="block px-4 py-2 text-white hover:bg-[#9a5f5b] rounded-md"
+                >
+                  All Services
+                </Link>
                 <Link
                   to="/services/event"
                   className="block px-4 py-2 text-white hover:bg-[#9a5f5b] rounded-md"
@@ -39,7 +44,7 @@ export const Navbar = () => {
                 </Link>
                 <Link
                   to="/services/hotel"
-                  className="block px-4 py-2 text-white hover:bg-[#9a5f5b]"
+                  className="block px-4 py-2 text-white hover:bg-[#9a5f5b] rounded-md"
                 >
                   Hotel Staffing
                 </Link>
@@ -48,6 +53,60 @@ export const Navbar = () => {
                   className="block px-4 py-2 text-white hover:bg-[#9a5f5b] rounded-md"
                 >
                   Cleaning Services
+                </Link>
+                <Link
+                  to="/services/chefs"
+                  className="block px-4 py-2 text-white hover:bg-[#9a5f5b] rounded-md"
+                >
+                  Chefs & Kitchen Management
+                </Link>
+                <Link
+                  to="/services/food-service"
+                  className="block px-4 py-2 text-white hover:bg-[#9a5f5b] rounded-md"
+                >
+                  Food Service
+                </Link>
+                <Link
+                  to="/services/it"
+                  className="block px-4 py-2 text-white hover:bg-[#9a5f5b] rounded-md"
+                >
+                  IT & Software Management
+                </Link>
+                <Link
+                  to="/services/sales"
+                  className="block px-4 py-2 text-white hover:bg-[#9a5f5b] rounded-md"
+                >
+                  Sales & Marketing
+                </Link>
+                <Link
+                  to="/services/finance"
+                  className="block px-4 py-2 text-white hover:bg-[#9a5f5b] rounded-md"
+                >
+                  Finance
+                </Link>
+                <Link
+                  to="/services/hr"
+                  className="block px-4 py-2 text-white hover:bg-[#9a5f5b] rounded-md"
+                >
+                  HR & Recruitment
+                </Link>
+                <Link
+                  to="/services/care"
+                  className="block px-4 py-2 text-white hover:bg-[#9a5f5b] rounded-md"
+                >
+                  Care Service
+                </Link>
+                <Link
+                  to="/services/luxury"
+                  className="block px-4 py-2 text-white hover:bg-[#9a5f5b] rounded-md"
+                >
+                  Luxury Travels
+                </Link>
+                <Link
+                  to="/services/business"
+                  className="block px-4 py-2 text-white hover:bg-[#9a5f5b] rounded-md"
+                >
+                  Business Administration
                 </Link>
               </div>
             </div>
@@ -100,7 +159,14 @@ export const Navbar = () => {
               />
             </button>
             {servicesOpen && (
-              <div className="pl-4 mt-2 space-y-2">
+              <div className="pl-4 mt-4 space-y-2 font-playpen">
+                <Link
+                  to="/services"
+                  className="block text-white hover:text-gray-200"
+                  onClick={() => setIsOpen(false)}
+                >
+                  All Services
+                </Link>
                 <Link
                   to="/services/event"
                   className="block text-white hover:text-gray-200"
@@ -121,6 +187,69 @@ export const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                 >
                   Cleaning Services
+                </Link>
+                <Link
+                  to="/services/chefs"
+                  className="block text-white hover:text-gray-200"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Chefs & Kitchen Management
+                </Link>
+                <Link
+                  to="/services/food-service"
+                  className="block text-white hover:text-gray-200"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Food Service
+                </Link>
+                <Link
+                  to="/services/it"
+                  className="block text-white hover:text-gray-200"
+                  onClick={() => setIsOpen(false)}
+                >
+                  IT & Software Management
+                </Link>
+                <Link
+                  to="/services/sales"
+                  className="block text-white hover:text-gray-200"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Sales & Marketing
+                </Link>
+                <Link
+                  to="/services/finance"
+                  className="block text-white hover:text-gray-200"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Finance
+                </Link>
+                <Link
+                  to="/services/hr"
+                  className="block text-white hover:text-gray-200"
+                  onClick={() => setIsOpen(false)}
+                >
+                  HR & Recruitment
+                </Link>
+                <Link
+                  to="/services/care"
+                  className="block text-white hover:text-gray-200"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Care Service
+                </Link>
+                <Link
+                  to="/services/luxury"
+                  className="block text-white hover:text-gray-200"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Luxury Travels
+                </Link>
+                <Link
+                  to="/services/business"
+                  className="block text-white hover:text-gray-200"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Business Administration
                 </Link>
               </div>
             )}
